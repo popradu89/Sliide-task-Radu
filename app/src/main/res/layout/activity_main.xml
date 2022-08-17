@@ -12,54 +12,53 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/name_field"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Name" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="16dp"
         style="@style/HeaderTextStyle"
-        android:text="@string/toppings"
+        android:text="@string/userdata"
         android:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name" />
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name" />
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
 
     <CheckBox
         android:id="@+id/whipped_cream_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Whipped Cream"
+        android:text="Include all data"
         android:textSize="16sp"
         android:paddingLeft="24dp" />
-
-    <CheckBox
-        android:id="@+id/chocolate_checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="24dp"
-        android:text="Chocolate"
-        android:textSize="16sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="16dp"
-        android:text="Quantity"
+        android:text="Add data to list"
         style="@style/HeaderTextStyle" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-
-        <Button
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:onClick="decrement"
-            android:text="-" />
 
         <TextView
             android:id="@+id/quantity_text_view"
@@ -68,7 +67,7 @@
             android:layout_marginBottom="16dp"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
-            android:text="2"
+            android:text="Add user"
             android:textColor="@android:color/black"
             android:textSize="16sp" />
 
@@ -85,6 +84,15 @@
         android:layout_height="wrap_content"
         android:onClick="submitOrder"
         android:layout_marginTop="16dp"
-        android:text="ORDER" />
+        android:text="Done" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="User list latest version below:"
+        style="@style/HeaderTextStyle" />
+
 </LinearLayout>
 </ScrollView>

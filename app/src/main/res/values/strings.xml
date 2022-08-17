@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Just Java</string>
-    <string name="toppings">Toppings</string>
+    <string name="app_name">User Data</string>
+    <string name="userdata">User Data</string>
     <string name="thank_you">Thank you</string>
 </resources>
